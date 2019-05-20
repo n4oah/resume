@@ -1,0 +1,22 @@
+{
+    "name": "김호진",
+    "birthday": "1999-03-24",
+    "career": [
+        {
+            "companyName": "위즈디엔에스코리아",
+            "startDate": "2018-06-25",
+            "endDate": "2018-06-25",
+            "kills": [
+                {
+                    "name": "Java",
+                    "leven": "7"
+                }
+            ]
+        }
+    ],
+    "project": [
+        {
+
+        }
+    ]
+}
