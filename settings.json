@@ -1,22 +1,105 @@
+/*
+    @Author: n4oah
+
+    json 파일 수정으로 간단한 이력서 static page를 만들 수 있습니다.
+
+    > 줄 바꿈: \n
+    
+    > format
+    날짜 format: YYYY-MM-DD
+    날짜-시간 format: YYYY-MM-DD hh:mm:ss
+
+    > sns->icon은 static->icon->sns에 있는 파일 잠조함
+
+    > skills->level최대값 10
+*/
+
 {
     "name": "김호진",
+    "mail": "n4oahdev@gmail.com",
+    "telNo": "010-8191-9799",
     "birthday": "1999-03-24",
+    "simpleIntroduce": "중학교 ",
+    "sns": [
+        {
+            "name": "github",
+            "url": "https://github.com/n4oah",
+            "icon": "github.png"
+        },
+        {
+            "name": "tistory",
+            "url": "https://n4oah.tistory.com/",
+            "icon": "tistory.png"
+        }
+    ],
+    "skills": [
+        {
+            "languege": [
+                {
+                    "name": "Languege",
+                    "skill": [
+                        {
+                            "name": "Java",
+                            "level": "8"
+                        },
+                        {
+                            "name": "C#",
+                            "level": "6"
+                        },
+                        {
+                            "name": "Python",
+                            "level": "3"
+                        },
+                        {
+                            "name": "Pawn",
+                            "level": "9"
+                        },
+                        {
+                            "name": "Javascript",
+                            "level": "4"
+                        },
+                        {
+                            "name": "Go",
+                            "level": "2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "career": [
         {
             "companyName": "위즈디엔에스코리아",
             "startDate": "2018-06-25",
             "endDate": "2018-06-25",
-            "kills": [
-                {
-                    "name": "Java",
-                    "leven": "7"
-                }
+            "skills": [
+                "Java"
             ]
         }
     ],
     "project": [
         {
-
+            "vitcampProj1": {
+                "title": "취업 구인/구직 사이트",
+                "content": "",
+                "downloadFile": "",
+                "startDate": "",
+                "endDate": "",
+                "description": [
+                    "Java", "JSP", "Servlet", "Javascript", "Jquery", "OracleDB"
+                ]
+            },
+            "vitcampProj2": {
+                "title": "커뮤니티 사이트",
+                "content": "유동적으로 게시판을 추가하여 게시글을 작성할 수 있음.\n",
+                "downloadFile": "",
+                "startDate": "",
+                "endDate": "",
+                "description": [
+                    "Java", "JSP", "Servlet", "Javascript", "Jquery", "OracleDB"
+                ]
+            }
+            
         }
     ]
 }
