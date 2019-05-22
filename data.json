@@ -1,25 +1,20 @@
-/*
-    @Author: n4oah
-
-    json 파일 수정으로 간단한 이력서 static page를 만들 수 있습니다.
-
-    > 줄 바꿈: \n
-    
-    > format
-    날짜 format: YYYY-MM-DD
-    날짜-시간 format: YYYY-MM-DD hh:mm:ss
-
-    > sns->icon은 static->icon->sns에 있는 파일 잠조함
-
-    > skills->level최대값 10
-*/
-
 {
+    "pageTitle": "김호진 이력서",
     "name": "김호진",
     "mail": "n4oahdev@gmail.com",
     "telNo": "010-8191-9799",
     "birthday": "1999-03-24",
-    "simpleIntroduce": "중학교 ",
+    "introduce": {
+        "simpleIntroduce": [
+            "배움에는 끝이 없다고 생각하는 실무 경력 1년차 개발자입니다.\n",
+            "고등학교를 졸업한 뒤 IT 산업기능요원으로 Java, Elasticsearch, Spring Boot",
+            "Restful-API, VueJs, CentOS등을 사용하여 솔루션 개발 및 시스템 엔지니어 업무를 맡고있습니다."
+        ],
+        "viewMore": [
+            "",
+            ""
+        ]
+    },
     "sns": [
         {
             "name": "github",
