@@ -2,8 +2,10 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
+    "build": "webpack --mode production --config webpack.config.js",
+    "start": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,23 @@
   "bugs": {
     "url": "https://github.com/n4oah/resume/issues"
   },
-  "homepage": "https://github.com/n4oah/resume#readme"
+  "homepage": "https://github.com/n4oah/resume#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.20",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "vue-loader": "^14.2.4",
+    "vue-router": "^3.0.6",
+    "vue-template-compiler": "^2.6.10",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
 }
