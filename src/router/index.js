@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue'
+import IndexVue from '../components/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -9,9 +9,9 @@ export default new VueRouter({
     base: '/',
     routes: [
         {
-            path: '/a',
-            name: 'HelloWorld',
-            component: HelloWorld
+            path: '/',
+            name: '페이지',
+            component: IndexVue
         },
         {
             path: '*',
