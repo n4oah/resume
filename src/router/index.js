@@ -5,8 +5,7 @@ import IndexVue from '../components/Index.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    mode: 'history',
-    base: '/',
+    //mode: 'history',
     routes: [
         {
             path: '/',
