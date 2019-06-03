@@ -321,5 +321,4 @@ export default {
       line-height: 48px;
     }
   }
-  
 </style>
