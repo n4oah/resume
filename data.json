@@ -1,10 +1,14 @@
 {
-    "title": "김호진 이력서",
-    "name": "김호진",
-    "email": "n4oahdev@gmail.com",
-    "telNumber": "010-8191-9799",
-    "birthday": "1999-03-24",
-    "gender": true,
+    "header": {
+        "title": "풀스택 개발자 김호진 이력서",
+        "name": "김호진",
+        "email": "n4oahdev@gmail.com",
+        "telNumber": "010-8191-9799",
+        "birthday": "1999-03-24",
+        "resumePhoto": "/img/resume-photo.jpg",
+        "job": "웹 풀스택 개발자",
+        "gender": true
+    },
     "introduce": {
         "simpleIntroduce": [
             "배움에는 끝이 없다고 생각하는 실무 경력 1년차 개발자입니다.\n",
@@ -17,18 +21,10 @@
             ""
         ]
     },
-    "sns": [
-        {
-            "name": "github",
-            "url": "https://github.com/n4oah",
-            "icon": "github"
-        },
-        {
-            "name": "tistory",
-            "url": "https://n4oah.tistory.com",
-            "icon": "tistory"
-        }
-    ],
+    "sns": {
+        "github": "https://github.com/n4oah",
+        "tistory": "https://n4oah.tistory.com"
+    },
     "skills": [
         {
             "languege": [
@@ -62,11 +58,57 @@
                     ]
                 },
                 {
-                    "name": "Framework",
+                    "name": "Framework/API",
                     "skill": [
                         {
-                            "name": "",
-                            "level": ""
+                            "name": "SpringMVC/Mybatis",
+                            "level": "7"
+                        },
+                        {
+                            "name": "Spring Boot",
+                            "level": "7"
+                        },
+                        {
+                            "name": "VueJS",
+                            "level": "5"
+                        },
+                        {
+                            "name": "JQuery",
+                            "level": "7"
+                        }
+                    ]
+                },
+                {
+                    "name": "Database",
+                    "skill": [
+                        {
+                            "name": "MySQL",
+                            "level": "6"
+                        },
+                        {
+                            "name": "OracleDB",
+                            "level": "4"
+                        },
+                        {
+                            "name": "PostgreSQL",
+                            "level": "5"
+                        },
+                        {
+                            "name": "Elasticsearch",
+                            "level": "3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Etc",
+                    "skill": [
+                        {
+                            "name": "Linux",
+                            "level": "4"
+                        },
+                        {
+                            "name": "Git",
+                            "level": "3"
                         }
                     ]
                 }
@@ -78,39 +120,104 @@
             "companyName": "위즈디엔에스코리아",
             "startDate": "2018-06-25",
             "endDate": "",
-            "inoffice": true,
+            "inProgress": true,
             "skills": [
-                "Java", "Spring", "Spring Boot", "ELK Stack", "postgreSQL", "VueJS", "jQuery", "Python", "webpack", "SVN", "RESTFul-API", "CentOS"
+                "Java", "Spring", "Spring Boot", "ELK Stack", "Mybatis", "postgreSQL",
+                "VueJS", "jQuery", "Python3", "webpack", "SVN", "RESTFul-API", "CentOS"
             ],
             "content": [
                 "개인 정보 접속 관리 솔루션 개발 및 유지보수",
-                "솔루션 설치 및 엔지니어"
+                "고객사 솔루션 인프라 구축 및 유지보수"
             ]
         }
     ],
     "project": [
         {
-            "vitcampProj1": {
-                "title": "취업 구인/구직 사이트",
-                "content": "",
-                "downloadFile": "",
-                "startDate": "",
-                "endDate": "",
-                "description": [
-                    "Java", "JSP", "Servlet", "Javascript", "Jquery", "OracleDB"
-                ]
-            },
-            "vitcampProj2": {
-                "title": "커뮤니티 사이트",
-                "content": "유동적으로 게시판을 추가하여 게시글을 작성할 수 있음.\n",
-                "downloadFile": "",
-                "startDate": "",
-                "endDate": "",
-                "description": [
-                    "Java", "JSP", "Servlet", "Javascript", "Jquery", "OracleDB"
-                ]
-            }
-            
+            "title": "One Touch Resume",
+            "content": [
+                "누구나 간단한 json파일 수정으로 간단한 이력서 static page개발 가능"
+            ],
+            "organization": "개인 프로젝트",
+            "downloadFile": "github:redirect:https://github.com/n4oah/resume",
+            "startDate": "2019-05",
+            "endDate": "",
+            "inProgress": true,
+            "description": [
+                "Vue.Js/Vue-router/Vue-loader", "webpack/webpack-dev-server", "babel", "git"
+            ]
+        },
+        {
+            "title": "WEEDS blackbox Suite 7",
+            "content": [
+                "Spring + ELM-Stack + PostgreSQL기반 관리 서비스 RESTFul-API Back-End 서버 개발",
+                "Vue.js를 이용한 Front-End 개발",
+                "ELK-Stack/Tomcat/어널라이저를 이용한 Linux 서버 인프라 구축",
+                "고객사 WAS를 통해 정제된 로그를 분석하여 권한이력 관리 솔루션 개발"
+            ],
+            "organization": "WEEDS DNS KOREA",
+            "downloadFile": "",
+            "startDate": "2018-10",
+            "endDate": "",
+            "inProgress": true,
+            "description": [
+                "Spring", "Vue.Js", "ElasticSearch", "Tomcat", "SVN", "PostgreSQL", "Mybatis"
+            ]
+        },
+        {
+            "title": "취업 구인/구직 사이트",
+            "content": [
+                "사람인, 잡코리아와 다르게 IT분야만을 위한 취업전문 사이트",
+                ""
+            ],
+            "organization": "비트캠프",
+            "downloadFile": "pdf:forward:/asset/portfolio/비트캠프_김호진_프로젝트.pdf",
+            "startDate": "2017-12-15",
+            "endDate": "2018-01-22",
+            "description": [
+                "Java", "Spring MVC", "Jquery", "OracleDB", "git"
+            ]
+        },
+        {
+            "title": "커뮤니티 사이트",
+            "content": [
+                "유동적으로 프로그래밍 언어 게시판을 추가하여 주제에 소통 가능"
+            ],
+            "organization": "비트캠프",
+            "downloadFile": "",
+            "startDate": "2017-10-24",
+            "endDate": "2017-10-30",
+            "description": [
+                "Java", "JSP", "Servlet", "Jquery", "Mysql", "git"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "name": "비트캠프",
+            "content": "Java & Spring Programming",
+            "startDate": "2017-07",
+            "endDate": "2018-01",
+            "inProgress": false
+        }
+    ],
+    "certificate": [
+        {
+            "name": "컴퓨터활용능력 2급",
+            "acquisitionData": "2015-09",
+            "agencyIssuing": "대한상공회의소",
+            "grant": "최종합격"
+        },
+        {
+            "name": "워드프로세서 단일등급",
+            "acquisitionData": "2017-04",
+            "agencyIssuing": "대한상공회의소",
+            "grant": "최종합격"
+        },
+        {
+            "name": "전산회계운용사 3급",
+            "acquisitionData": "2017-07",
+            "agencyIssuing": "대한상공회의소",
+            "grant": "최종합격"
         }
     ]
 }
