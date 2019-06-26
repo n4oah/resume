@@ -57,6 +57,11 @@
 </template>
  
 <script>
+import render from '../render/render'
+
+let aaa = render();
+console.log(aaa)
+
 export default {
     name: "HelloWorld",
     data() {
