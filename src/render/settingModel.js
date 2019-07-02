@@ -1,3 +1,5 @@
-export default produce = {
-    var 
+export default class Setting {
+    constructor() {
+
+    }
 }

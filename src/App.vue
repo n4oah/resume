@@ -11,6 +11,7 @@
  
 <script>
 import footer from './components/footer.vue'
+import section from './components/section'
 
 export default {
   name: 'App',

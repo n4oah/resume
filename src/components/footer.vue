@@ -1,14 +1,14 @@
 <template>
-<div class="header">
+<footer>
     {{ message }} |
     <a herf="https://github.com/n4oah/resume">
     </a>
-</div>
+</footer>
 </template>
  
 <script>
 export default {
-    name: "footer",
+    name: "mainFooter",
     data() {
         return {
             message: "copyright all rights reserved n4oah",
