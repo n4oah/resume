@@ -1,12 +1,6 @@
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
 import VueRouter from 'vue-router'
 import IndexVue from '../components/Index.vue'
-
 import settingData from 'resource/data.json'
-
-Vue.use(VueRouter)
-Vue.use(BootstrapVue)
 
 import 'resource/sass/custom.scss'
 
