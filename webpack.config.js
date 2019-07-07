@@ -28,8 +28,22 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
+            },
+            {
+                test: /\.(css|sass|scss)$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpg|jpeg|svg)$/,
+                use: [
+                    'file-loader'
+                ]
             }
-        ]
+        ],
     },
     devServer: {
         historyApiFallback: true

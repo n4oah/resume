@@ -1,21 +1,32 @@
 <template>
 <div>
     <div class="rela-block caps greyed">Skills</div>
-    <p class="long-margin">asdasd</p>
+    <div v-for="item in data">
+        <ul>
+            <li><p class="font-weight-bolder">{{ item.name }}</p></li>
+            <ul>
+                <div v-for="skill in item.skill">
+                    <li>
+                        {{ skill.name }}
+                        <b-progress variant="success" :max="10" :value="parseInt(skill.level)" :show-value="true"></b-progress>
+                    </li>
+                </div>
+            </ul>
+        </ul>
+    </div>
 </div>
 </template>
 
 <script>
-import section from './section'
-
 export default {
-    section,
     name: 'skillsSection',
     created: function() {
+        console.log(this.data)
     },
     data() {
         return {
         }
-    }
+    },
+    props: ['data']
 }
 </script>

@@ -31,96 +31,93 @@
     },
     "skills": [
         {
-            "languege": [
+            "name": "Languege",
+            "skill": [
                 {
-                    "name": "Languege",
-                    "skill": [
-                        {
-                            "name": "Java",
-                            "level": "8"
-                        },
-                        {
-                            "name": "C#",
-                            "level": "6"
-                        },
-                        {
-                            "name": "Python",
-                            "level": "3"
-                        },
-                        {
-                            "name": "Pawn",
-                            "level": "9"
-                        },
-                        {
-                            "name": "Javascript",
-                            "level": "4"
-                        },
-                        {
-                            "name": "Go",
-                            "level": "2"
-                        }
-                    ]
+                    "name": "Java",
+                    "level": "8"
                 },
                 {
-                    "name": "Framework/API",
-                    "skill": [
-                        {
-                            "name": "SpringMVC/Mybatis",
-                            "level": "7"
-                        },
-                        {
-                            "name": "Spring Boot",
-                            "level": "7"
-                        },
-                        {
-                            "name": "VueJS",
-                            "level": "5"
-                        },
-                        {
-                            "name": "JQuery",
-                            "level": "7"
-                        }
-                    ]
+                    "name": "C#",
+                    "level": "6"
                 },
                 {
-                    "name": "Database",
-                    "skill": [
-                        {
-                            "name": "MySQL",
-                            "level": "6"
-                        },
-                        {
-                            "name": "OracleDB",
-                            "level": "4"
-                        },
-                        {
-                            "name": "PostgreSQL",
-                            "level": "5"
-                        },
-                        {
-                            "name": "Elasticsearch",
-                            "level": "3"
-                        }
-                    ]
+                    "name": "Python",
+                    "level": "3"
                 },
                 {
-                    "name": "Etc",
-                    "skill": [
-                        {
-                            "name": "Linux",
-                            "level": "4"
-                        },
-                        {
-                            "name": "Git",
-                            "level": "3"
-                        },
-                        {
-                            "name": "RESTFul-API",
-                            "level": "7"
-                        }
-                    ]
+                    "name": "Pawn",
+                    "level": "9"
+                },
+                {
+                    "name": "Javascript",
+                    "level": "4"
+                },
+                {
+                    "name": "Go",
+                    "level": "2"
                 }
             ]
+        },
+        {
+            "name": "Framework/API",
+            "skill": [
+                {
+                    "name": "SpringMVC/Mybatis",
+                    "level": "7"
+                },
+                {
+                    "name": "Spring Boot",
+                    "level": "7"
+                },
+                {
+                    "name": "VueJS",
+                    "level": "5"
+                },
+                {
+                    "name": "JQuery",
+                    "level": "7"
+                }
+            ]
+        },
+        {
+            "name": "Database",
+            "skill": [
+                {
+                    "name": "MySQL",
+                    "level": "6"
+                },
+                {
+                    "name": "OracleDB",
+                    "level": "4"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "level": "5"
+                },
+                {
+                    "name": "Elasticsearch",
+                    "level": "3"
+                }
+            ]
+        },
+        {
+            "name": "Etc",
+            "skill": [
+                {
+                    "name": "Linux",
+                    "level": "4"
+                },
+                {
+                    "name": "Git",
+                    "level": "3"
+                },
+                {
+                    "name": "RESTFul-API",
+                    "level": "7"
+                }
+            ]
+                
         }
     ],
     "career": [
