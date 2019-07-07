@@ -3,7 +3,7 @@
     <div id="title" class="rela-block top-bar">
         <div class="caps name">
             <div class="abs-center">
-                <span>{{ message }}</span>
+                <span>{{ data.header.name }}</span>
             </div>
         </div>
     </div>
@@ -35,10 +35,15 @@
         <p class="rela-block list-thing">Culinary af</p>
     </div>
     <div id="content" class="rela-block content-container">
-        <h2 class="rela-block caps title">Jr Front-End Developer</h2>
+        <h2 class="rela-block caps title">{{ data.header.job }}</h2>
         <div class="rela-block separator"></div>
-        <div class="rela-block caps greyed">Profile</div>
+
+        <skillsSection />
+        <!-- 
+        <div class="rela-block caps greyed">Skills</div>
         <p class="long-margin">Retro DIY quinoa, mixtape williamsburg master cleanse bushwick tumblr chillwave dreamcatcher hella wolf paleo. Knausgaard semiotics truffaut cornhole hoodie, YOLO meggings gochujang tofu. Locavore ugh kale chips iPhone biodiesel typewriter freegan, kinfolk brooklyn kitsch man bun. Austin neutra etsy, lumbersexual paleo cornhole sriracha kinfolk meggings kickstarter. </p>
+        -->
+
         <div class="rela-block caps greyed">Experience</div>
 
         <h3>Job #1</h3>
@@ -57,20 +62,29 @@
 </template>
  
 <script>
+import settingData from 'resource/data.json'
+import * as section from 'src/components/section'
+
+console.log(settingData)
+console.log(section.skillsSection.section.generatorSection(settingData.skills || {}))
+
 export default {
     name: "HelloWorld",
     data() {
         return {
-            message: "김 호진"
+            data: settingData
         };
+    },
+    components: {
+      skillsSection: section.skillsSection
     }
 };
 </script>
 
-<style scoped>
+<style>
 * {
     box-sizing: border-box;
-    transition: 0.35s ease;
+    /* transition: 0.35s ease; */
   }
   .rela-block {
     display: block;

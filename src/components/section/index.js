@@ -1,0 +1,1 @@
+export {default as skillsSection} from './skillsSection.vue'

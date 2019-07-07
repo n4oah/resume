@@ -10,8 +10,7 @@
 </template>
  
 <script>
-import footer from './components/footer.vue'
-import section from './components/section'
+import footer from 'src/components/footer.vue'
 
 export default {
   name: 'App',
