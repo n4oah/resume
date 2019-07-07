@@ -1,11 +1,13 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
-        filename: 'bundle.js'
+        publicPath: 'dist/',
+        filename: '[name].[chunkhash].js'
     },
     resolve: {
         alias: {
@@ -40,12 +42,39 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|svg)$/,
                 use: [
-                    'file-loader'
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '/static/img/[hash].[ext]'
+                        }
+                    }
                 ]
             }
         ],
     },
     devServer: {
         historyApiFallback: true
+    },
+    plugins: [
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.html.template'
+        }),
+        new HtmlWebpackPlugin({
+            filename: '../index.html',
+            template: './index.html.template'
+        })
+    ],
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+            vendor: {
+                chunks: 'initial',
+                    name: 'vendor',
+                    enforce: true
+                }
+            }
+        }
     }
-};
+}
