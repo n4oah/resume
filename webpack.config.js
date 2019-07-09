@@ -1,7 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// require("@babel/polyfill")
 
 module.exports = {
     entry: ['@babel/polyfill', './src/main.js'],
@@ -57,7 +56,7 @@ module.exports = {
         historyApiFallback: true
     },
     plugins: [
-        //new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html.template'
