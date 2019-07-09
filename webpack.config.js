@@ -1,9 +1,10 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// require("@babel/polyfill")
 
 module.exports = {
-    entry: './src/main.js',
+    entry: ['@babel/polyfill', './src/main.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'dist/',
@@ -56,7 +57,7 @@ module.exports = {
         historyApiFallback: true
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        //new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html.template'
@@ -69,12 +70,17 @@ module.exports = {
     optimization: {
         splitChunks: {
             cacheGroups: {
-            vendor: {
-                chunks: 'initial',
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    chunks: 'initial',
                     name: 'vendor',
-                    enforce: true
+                    enforce: true,
+                    chunks: 'all'
                 }
             }
         }
+    },
+    performance: {
+        hints: false
     }
 }

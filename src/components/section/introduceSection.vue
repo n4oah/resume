@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import arrayToString from 'src/js/utils/arrayToString.js'
-
 export default {
     name: 'introduceSection',
     created: function() {
