@@ -2,7 +2,11 @@
 <div>
     <div class="rela-block caps greyed">introduce</div>
     <div>
-        <p class="justified">{{ $arrayToString(data.simpleIntroduce) }}</p>
+        <p class="justified" v-html="$TemplateConvert(data.simpleIntroduce)"></p><b-link v-b-modal.more-introduce @:click.stop="doThis" class="justified">더 보기</b-link>
+
+        <b-modal id="more-introduce" size="lg" scrollable=true centered=true title="자기소개서">
+            <p class="my-8 justified" v-html="$TemplateConvert(data.viewMore)"></p>
+        </b-modal>
     </div>
 </div>
 </template>
@@ -11,11 +15,15 @@
 export default {
     name: 'introduceSection',
     created: function() {
-        //console.log(this.data)
-        console.log(this.$arrayToString)
+        //console.log(this.$arrayToString)
     },
     data() {
         return {
+        }
+    },
+    methods: {
+        introduceMore: function(event) {
+            
         }
     },
     props: ['data']
