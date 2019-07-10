@@ -1,19 +1,20 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const rootPath = path.resolve(__dirname, '..')
+
 module.exports = {
-    entry: ['@babel/polyfill', './src/main.js'],
+    entry: ['@babel/polyfill', path.resolve(rootPath, './src/main.js')],
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(rootPath, 'dist'),
         publicPath: 'dist/',
         filename: '[name].[chunkhash].js'
     },
     resolve: {
         alias: {
             "vue$": "vue/dist/vue.esm.js",
-            'src': path.resolve(__dirname, './src'),
-            'resource': path.resolve(__dirname, './resource')
+            'src': path.resolve(rootPath, './src'),
+            'resource': path.resolve(rootPath, './resource')
         },
         extensions: ['.js', '.vue', '.json']
     },
@@ -25,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                include: path.join(__dirname),
+                include: path.join(rootPath),
                 exclude: /(node_modules)|(dist)/,
                 use: {
                     loader: 'babel-loader'
@@ -56,7 +57,7 @@ module.exports = {
         historyApiFallback: true
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        //new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html.template'
