@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "webpack --mode production --config ./build/webpack.config-product.js",
-    "start": "webpack-dev-server --mode development  --config ./build/webpack.config-developer.js --open",
+    "start": "webpack-dev-server --inline --progress --config ./build/webpack.config-developer.js --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

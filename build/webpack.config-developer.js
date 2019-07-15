@@ -7,8 +7,7 @@ module.exports = {
     entry: ['@babel/polyfill', path.resolve(rootPath, './src/main.js')],
     output: {
         path: path.resolve(rootPath, 'dist'),
-        publicPath: 'dist/',
-        filename: '[name].[chunkhash].js'
+        publicPath: '/'
     },
     resolve: {
         alias: {
@@ -44,41 +43,30 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|svg)$/,
                 use: [
                     {
-                        loader: 'file-loader',
-                        options: {
-                            name: '/static/img/[hash].[ext]'
-                        }
+                        loader: 'file-loader'
                     }
                 ]
             }
         ],
     },
-    devServer: {
-        historyApiFallback: true
-    },
     plugins: [
-        //new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './index.html.template'
-        }),
-        new HtmlWebpackPlugin({
-            filename: '../index.html',
-            template: './index.html.template'
+            template: 'index.html',
+            inject: true
         })
     ],
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /[\\/]node_modules[\\/]/,
-                    chunks: 'initial',
-                    name: 'vendor',
-                    enforce: true,
-                    chunks: 'all'
-                }
-            }
-        }
+    devServer: {
+        historyApiFallback: {
+            rewrites: [
+                {
+                    from: /.*/,
+                    to: path.posix.join('/', 'index.html')
+                },
+            ],
+          },
+        historyApiFallback: true,
+        compress: true,
     },
     performance: {
         hints: false

@@ -54,19 +54,16 @@ module.exports = {
             }
         ],
     },
-    devServer: {
-        historyApiFallback: true
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html.template'
-        }),
+        })/*,
         new HtmlWebpackPlugin({
             filename: '../index.html',
             template: './index.html.template'
-        })
+        })*/
     ],
     optimization: {
         splitChunks: {
