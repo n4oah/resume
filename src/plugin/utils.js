@@ -43,6 +43,13 @@ export default {
         },
         Vue.prototype.$insert = (index, str, addStr) => {
             return [str.slice(0, index), addStr, str.slice(index+1)].join('')
+        },
+        Vue.prototype.$isDataEmpty = object => {
+            if (object == null) return true
+            if (typeof object !== "object") return true
+            if (Object.keys(object).length === 0) return true
+
+            return false
         }
     }
 }

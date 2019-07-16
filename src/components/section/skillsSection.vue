@@ -1,5 +1,5 @@
 <template>
-<div>
+<div v-if="$isDataEmpty(data) == false">
     <div class="rela-block caps greyed">Skills</div>
     <div v-for="item in data">
         <ul>
@@ -21,7 +21,6 @@
 export default {
     name: 'skillsSection',
     created: function() {
-        console.log(this.data)
     },
     data() {
         return {
