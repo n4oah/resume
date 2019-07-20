@@ -6,6 +6,7 @@ import 'resource/sass/custom.scss'
 
 const router = new VueRouter({
     //mode: 'history',
+    //hash: false,
     routes: [
         {
             path: '/',

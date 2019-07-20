@@ -8,7 +8,7 @@ module.exports = {
     entry: ['@babel/polyfill', path.resolve(rootPath, './src/main.js')],
     output: {
         path: path.resolve(rootPath, 'dist'),
-        publicPath: 'dist/',
+        publicPath: './dist/',
         filename: '[name].[chunkhash].js'
     },
     resolve: {
@@ -59,11 +59,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html.template'
-        })/*,
+        }),
         new HtmlWebpackPlugin({
             filename: '../index.html',
             template: './index.html.template'
-        })*/
+        })
     ],
     optimization: {
         splitChunks: {

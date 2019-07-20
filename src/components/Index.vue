@@ -13,25 +13,31 @@
       </div>
       <div>
         <div class="info">
-          <img src="resource/open-iconic/svg/person.svg" class="open-icon" alt="person" style="vertical-align: middle;" />
+          <img src="resource/icon/open-iconic/svg/person.svg" class="open-icon" alt="person" />
           <span>{{ data.header.name }}</span>
         </div>
         <div class="info">
-          <img src="resource/open-iconic/svg/envelope-closed.svg" class="open-icon" alt="email" style="vertical-align: middle;" />
+          <img src="resource/icon/open-iconic/svg/envelope-closed.svg" class="open-icon" alt="email" />
           <span>{{ data.header.email }}</span>
         </div>
         <div class="info">
-          <img src="resource/open-iconic/svg/phone.svg" class="open-icon" alt="tel" style="vertical-align: middle;" />
+          <img src="resource/icon/open-iconic/svg/phone.svg" class="open-icon" alt="tel" />
           <span>{{ data.header.telNumber }}</span>
         </div>
         <div class="info">
-          <img src="resource/open-iconic/svg/person.svg" class="open-icon" alt="info" style="vertical-align: middle;" />
+          <img src="resource/icon/open-iconic/svg/person.svg" class="open-icon" alt="info" />
           <span>{{ getInfo }}</span>
         </div>
         <br />
+        <template v-for="(key, value) in data.sns">
+          <p class="rela-block social twitter">{{ key }} : {{ value }}</p>
+        </template>
+        <!--
         <p class="rela-block social twitter">Twitter stuff</p>
         <p class="rela-block social pinterest">Pinterest things</p>
         <p class="rela-block social linked-in">Linked-in man</p>
+        -->
+        
         <p class="rela-block caps side-header">Expertise</p>
         <p class="rela-block list-thing">HTML</p>
         <p class="rela-block list-thing">CSS (Stylus)</p>
@@ -150,6 +156,7 @@ img {
   width: 14px;
   height: 14px;
   padding: auto;
+  vertical-align: middle;
 }
 body {
   font-family: "Open Sans";
