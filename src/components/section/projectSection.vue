@@ -1,12 +1,12 @@
 <template>
 <div v-if="$isDataEmpty(data) == false">
-	<div class="rela-block caps greyed">Career</div>
-	<div v-for="item of data">
+    <div class="rela-block caps greyed">project</div>
+    <div v-for="item of data">
 		<ul>
 			<li>
 				<p>
-					<span class="font-weight-bolder">{{ item.companyName }}</span>
-					<span class="sub-contnet">({{ item.startDate }} ~ {{ item.endDate || '' }}<template v-if="item.inProgress == true">재직중</template>)</span>
+					<span class="font-weight-bolder">{{ item.title }}</span>
+					<span class="sub-contnet">({{ item.startDate }} ~ {{ item.endDate || '' }}<template v-if="item.inProgress == true">진행중</template>)</span>
 				</p>
 				<ul>
 					<li>
@@ -28,26 +28,25 @@
 				</ul>
 			</li>
 		</ul>
+        <hr />
 	</div>
-	<hr />
 </div>
 </template>
 
 <script>
 export default {
-	name: 'career',
-	created: function() {
-	},
-	data() {
-		return {
-		}
-	},
-	props: ['data']
+    name: 'projectSection',
+    created: function() {
+    },
+    data() {
+        return {
+        }
+    },
+    methods: {
+        introduceMore: function(event) {
+            
+        }
+    },
+    props: ['data']
 }
 </script>
-
-<style scope>
-.sub-contnet {
-	font-size: 80%;
-}
-</style>

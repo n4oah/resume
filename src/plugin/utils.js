@@ -1,4 +1,4 @@
-import {tag, endTag} from 'resource/js/template.js'
+import {tag, endTag, redirectTag} from 'resource/js/template.js'
 
 export default {
     install (Vue) {
@@ -37,6 +37,15 @@ export default {
                 index = index + tag.br
             }
 
+            if (message.startsWith('redirect|')) {
+                let options = message.split('|')
+
+                let object = new Object()
+                object.type = options[0]
+                object.target = options[1]
+                object.href = options[options.length-1]
+                message = object;
+            }
             
             console.log(message)
             return message

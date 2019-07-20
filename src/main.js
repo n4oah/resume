@@ -12,9 +12,15 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(utils)
 
+const Var = {
+    render() {
+        return this.$scopedSlots.default(this.$attrs)
+    }
+}
+
 new Vue({
     el: '#app',
-    components: { App },
+    components: { App/*, 'Var': Var*/ },
     template: '<App/>',
     router
 });

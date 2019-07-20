@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const rootPath = path.resolve(__dirname, '..')
 
@@ -48,13 +49,13 @@ module.exports = {
             }
         ],
     },
-    /*plugins: [
+    plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html.template',
             inject: true
         })
-    ],*/
+    ],
     devServer: {
         historyApiFallback: {
             rewrites: [

@@ -26,8 +26,8 @@
         ]
     },
     "sns": {
-        "github": "https://github.com/n4oah",
-        "blog": "https://n4oah.tistory.com"
+        "github": "redirect|_blank|https://github.com/n4oah",
+        "tistory": "redirect|_blank|https://n4oah.tistory.com"
     },
     "skills": [
         {
@@ -171,8 +171,7 @@
         {
             "title": "취업 구인/구직 사이트",
             "content": [
-                "사람인, 잡코리아와 다르게 IT분야만을 위한 취업전문 사이트",
-                ""
+                "사람인, 잡코리아와 다르게 IT분야만을 위한 취업전문 사이트"
             ],
             "organization": "비트캠프",
             "downloadFile": "pdf:forward:/asset/portfolio/비트캠프_김호진_프로젝트.pdf",
