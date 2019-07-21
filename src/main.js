@@ -5,6 +5,7 @@ import router from './router'
 
 import BootstrapVue from 'bootstrap-vue'
 import utils from 'src/plugin/utils.js'
+import passComponent from 'src/components/common/pass.js'
 
 Vue.config.productionTip = false
 
@@ -12,15 +13,11 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(utils)
 
-const Var = {
-    render() {
-        return this.$scopedSlots.default(this.$attrs)
-    }
-}
+Vue.component('Pass', passComponent)
 
 new Vue({
     el: '#app',
-    components: { App/*, 'Var': Var*/ },
+    components: { App },
     template: '<App/>',
     router
 });

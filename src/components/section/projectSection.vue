@@ -8,7 +8,7 @@
 					<span class="font-weight-bolder">{{ item.title }}</span>
 					<span class="sub-contnet">({{ item.startDate }} ~ {{ item.endDate || '' }}<template v-if="item.inProgress == true">진행중</template>)</span>
 				</p>
-				<p class="text-muted">{{ item.organization }}</p>
+				<p class="text-muted font-italic">{{ item.organization }}</p>
 				<ul>
 					<li class="none-list-style">
 						<p class="small-margin font-weight-bolder">맡은업무</p>
