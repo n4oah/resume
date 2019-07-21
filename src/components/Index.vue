@@ -46,7 +46,7 @@
 								<span>({{item.startDate}} ~ </span>
 								<span v-if="item.inProgress == true">학습중</span>
 								<span v-else>{{ item.endDate }})</span>
-								<p class="text-muted">{{ item.content }}</p>
+								<p class="text-muted font-italic">{{ item.content }}</p>
 							</li>
 						</div>
 					</ul>
@@ -56,7 +56,7 @@
 							<li>
 								<span class="font-weight-bolder">{{ item.name }} </span>
 								<span>({{item.acquisitionData}})</span>
-								<p class="text-muted">{{ item.agencyIssuing }}</p>
+								<p class="text-muted font-italic">{{ item.agencyIssuing }}</p>
 							</li>
 						</div>
 					</ul>
@@ -78,12 +78,6 @@
 import resumePhoto from "resource/img/resume-photo.jpg";
 import settingData from "resource/data.json";
 import * as section from "src/components/section";
-
-const Pass = {
-	render() {
-		return this.$scopedSlots.default(this.$attrs)
-	}
-}
 
 export default {
 	name: "HelloWorld",
@@ -110,9 +104,8 @@ export default {
 	components: {
 		skillsSection: section.skillsSection,
 		introduceSection: section.introduceSection,
-    careerSection: section.careerSection,
-    projectSection: section.projectSection,
-		Pass: Pass
+		careerSection: section.careerSection,
+		projectSection: section.projectSection
 	}
 };
 </script>
@@ -213,7 +206,6 @@ body:before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(255, 255, 255, 0.92);
 }
 .caps {
 	text-transform: uppercase;
