@@ -29,13 +29,6 @@
 					<span>{{ getInfo }}</span>
 				</div>
 				<br />
-				<!--
-				<Pass >
-					<div slot-scope="{ x }">
-						{{x.type}}
-					</div>
-				</Pass>
-				-->
 				<Pass v-for="(value, key) in data.sns" :key="key" :object="$TemplateConvert(value)">
 					<div slot-scope="{ object }" class="social-info">
 						<a :href="object.href" :target="object.target" class="no-decoration">
@@ -46,13 +39,32 @@
 				</Pass>
 				<div>
 					<p class="rela-block caps side-header">Education</p>
-					<p class="rela-block list-thing">Advanced potion making</p>
-					<p class="rela-block list-thing">Degree in popping and locking</p>
+					<ul>
+						<div v-for="(item, index) of data.education" :key="index">
+							<li>
+								<span class="font-weight-bolder">{{ item.name }} </span>
+								<span>({{item.startDate}} ~ </span>
+								<span v-if="item.inProgress == true">학습중</span>
+								<span v-else>{{ item.endDate }})</span>
+								<p class="text-muted">{{ item.content }}</p>
+							</li>
+						</div>
+					</ul>
+					<p class="rela-block caps side-header">Certificate</p>
+					<ul>
+						<div v-for="(item, index) of data.certificate" :key="index">
+							<li>
+								<span class="font-weight-bolder">{{ item.name }} </span>
+								<span>({{item.acquisitionData}})</span>
+								<p class="text-muted">{{ item.agencyIssuing }}</p>
+							</li>
+						</div>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<div id="content" class="rela-block content-container">
-			<h2 class="rela-block caps title">{{ data.header.job }}</h2>
+			<h1 class="rela-block title">{{ data.header.job }}</h1>
 			<div class="rela-block separator"></div>
 			<introduceSection :data="data.introduce|| {}" />
 			<skillsSection :data="data.skills || []" />
@@ -109,6 +121,15 @@ export default {
 * {
 	box-sizing: border-box;
 	/* transition: 0.35s ease; */
+}
+.medium-margin {
+	margin-top: 12px;
+}
+.text-medium {
+	font-size: 110%;
+}
+.none-list-style {
+	list-style:none;
 }
 .resume-photo {
 	margin-top: 20px;
