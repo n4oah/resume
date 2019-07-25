@@ -143,7 +143,7 @@
                 "누구나 간단한 json파일 수정으로 간단한 이력서 static page개발 가능"
             ],
             "organization": "개인 프로젝트",
-            "downloadFile": "redirect:https://github.com/n4oah/resume",
+            "downloadFile": "redirect|_blank|https://github.com/n4oah/resume",
             "startDate": "2019-05",
             "endDate": "",
             "inProgress": true,
@@ -174,7 +174,7 @@
                 "사람인, 잡코리아와 다르게 IT분야만을 위한 취업전문 사이트"
             ],
             "organization": "비트캠프",
-            "downloadFile": "pdf:forward:/asset/portfolio/비트캠프_김호진_프로젝트.pdf",
+            "downloadFile": "download|forward|resource/portfolio/bitcamp_project.pdf",
             "startDate": "2017-12-15",
             "endDate": "2018-01-22",
             "description": [

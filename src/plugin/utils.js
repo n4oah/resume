@@ -45,9 +45,21 @@ export default {
                 object.target = options[1]
                 object.href = options[options.length-1]
                 message = object;
+                return message;
+            }
+
+            if (message.startsWith('download|')) {
+                let options = message.split('|')
+
+                let object = new Object()
+                object.type = options[0]
+                object.target = options[1]
+                object.href = options[options.length-1]
+                message = object;
+                return message;
             }
             
-            console.log(message)
+            // console.log(message)
             return message
         },
         Vue.prototype.$insert = (index, str, addStr) => {

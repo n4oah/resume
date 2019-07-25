@@ -13,10 +13,6 @@ const router = new VueRouter({
             name: '페이지',
             component: IndexVue,
             meta: { title: settingData.header.title }
-        },
-        {
-            path: '*',
-            redirect: '/'
         }
     ]
 })

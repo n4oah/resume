@@ -302,18 +302,6 @@ h3 {
 	background-size: cover !important;
 }
 
-.social.twitter:before {
-	background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png")
-		center no-repeat;
-}
-.social.pinterest:before {
-	background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png")
-		center no-repeat;
-}
-.social.linked-in:before {
-	background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png")
-		center no-repeat;
-}
 .side-header {
 	font-family: "Open Sans";
 	font-size: 18px;

@@ -31,6 +31,31 @@
 							</li>
 						</ul>
 					</li>
+					<li v-if="item.downloadFile" class="none-list-style">
+						<p class="small-margin font-weight-bolder">github & 다운로드</p>
+						<ul>
+							<li class="none-list-style">
+								<p class="small-margin">
+									<Pass :object="$TemplateConvert(item.downloadFile)">
+										<div slot-scope="{ object }" class="social-info">
+											<template v-if="object.type === 'redirect'">
+												<a :href="object.href" :target="object.target" class="no-decoration">
+													{{object.href}}
+												</a>
+											</template>
+											<template v-else-if="object.type === 'download'">
+												<template v-if="object.target === 'forward'">
+													<a :href="object.href" class="no-decoration">
+														{{object.href}}
+													</a>
+												</template>
+											</template>
+										</div>
+									</Pass>
+								</p>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
