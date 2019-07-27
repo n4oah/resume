@@ -45,7 +45,7 @@
 											</template>
 											<template v-else-if="object.type === 'download'">
 												<template v-if="object.target === 'forward'">
-													<a :href="object.href" class="no-decoration">
+													<a :href="object.href" class="no-decoration" download>
 														{{object.href}}
 													</a>
 												</template>
