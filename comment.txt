@@ -9,7 +9,7 @@
     날짜 format: YYYY-MM-DD
     날짜-시간 format: YYYY-MM-DD hh:mm:ss
 
-    > sns->icon은 static->icon->sns에 있는 파일 잠조함
+    > social->icon은 static->icon->social에 있는 파일 잠조함
 
     > skills->level최대값 10
 */

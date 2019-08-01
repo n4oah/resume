@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
                 <ul class="list-unstyled list-inline social-icon text-center">
-                    <Pass v-for="(value, key) in data.sns" :key="key" :object="$TemplateConvert(value)">
+                    <Pass v-for="(value, key) in data.social" :key="key" :object="$TemplateConvert(value)">
                         <template slot-scope="{ object }">
                             <li class="list-inline-item">
-                                <a :href="object.href"><img :src="'resource/icon/sns/' + key + '.png'" /></a>
+                                <a :href="object.href"><img :src="'resource/icon/social/' + key + '.png'" /></a>
                             </li>
                         </template>
                     </Pass>

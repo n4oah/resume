@@ -29,10 +29,10 @@
 					<span>{{ getInfo }}</span>
 				</div>
 				<br />
-				<Pass v-for="(value, key) in data.sns" :key="key" :object="$TemplateConvert(value)">
+				<Pass v-for="(value, key) in data.social" :key="key" :object="$TemplateConvert(value)">
 					<div slot-scope="{ object }" class="social-info">
 						<a :href="object.href" :target="object.target" class="no-decoration">
-							<img :src="'resource/icon/sns/' + key + '.png'" />
+							<img :src="'resource/icon/social/' + key + '.png'" />
 							{{object.href}}
 						</a>
 					</div>
@@ -367,11 +367,11 @@ h3 {
 	}
 }
 .social.github {
-	background: url("~resource/icon/sns/github.png") center no-repeat;;
+	background: url("~resource/icon/social/github.png") center no-repeat;;
 	background-size: 100%;
 }
 .social.tistory {
-	background: url("~resource/icon/sns/tistory.png") center no-repeat;;
+	background: url("~resource/icon/social/tistory.png") center no-repeat;;
 	background-size: 100%;
 }
 </style>
