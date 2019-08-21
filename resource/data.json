@@ -132,7 +132,7 @@
             ],
             "content": [
                 "개인 정보 접속 관리 솔루션 개발 및 유지보수",
-                "고객사 인프라 구축 및 유지보수"
+                "고객사 Linux환경 인프라 구축 및 유지보수"
             ]
         }
     ],
@@ -157,7 +157,7 @@
                 "Spring + ELM-Stack + PostgreSQL기반 관리 서비스 RESTFul-API Back-End 서버 개발",
                 "Vue.js를 이용한 Front-End 개발",
                 "ELK-Stack/Tomcat/어널라이저를 이용한 Linux 서버 인프라 구축",
-                "고객사 WAS를 통해 정제된 로그를 분석하여 권한이력 관리 솔루션 개발"
+                "고객사 WAS를 통해 추출된 로그를 분석하여 권한이력 관리 솔루션 개발"
             ],
             "organization": "WEEDS DNS KOREA",
             "downloadFile": "",
@@ -166,6 +166,22 @@
             "inProgress": true,
             "description": [
                 "Spring MVC", "Vue.Js", "ElasticSearch", "Tomcat", "SVN", "PostgreSQL", "Mybatis"
+            ]
+        },
+        {
+            "title": "WEEDS Batch",
+            "content": [
+                "Spring Boot의 Batch기능을 사용하여 Job 스케쥴 실행",
+                "고객사 WAS를 통해 추출된 로그를 분석하여 일정기간 마다 권한이력 관련 데이터 정제 Job 개발",
+                "blackbox Suite 7에서 대시보드 속도 이슈가 있어 일정기간 마다 데이터 정제 Job개발"
+            ],
+            "organization": "WEEDS DNS KOREA",
+            "downloadFile": "",
+            "startDate": "2019-03",
+            "endDate": "",
+            "inProgress": true,
+            "description": [
+                "Spring Boot", "Spring Batch", "ElasticSearch", "SVN", "PostgreSQL", "Mybatis"
             ]
         },
         {
