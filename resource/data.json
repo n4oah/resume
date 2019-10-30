@@ -38,24 +38,32 @@
                     "level": "8"
                 },
                 {
+                    "name": "Kotlin",
+                    "level": "7"
+                },
+                {
                     "name": "C#",
                     "level": "6"
                 },
                 {
                     "name": "Python",
-                    "level": "3"
+                    "level": "5"
                 },
                 {
                     "name": "Pawn",
                     "level": "9"
                 },
                 {
-                    "name": "Javascript",
-                    "level": "4"
+                    "name": "Javascript/Typescript",
+                    "level": "6"
                 },
                 {
                     "name": "Go",
                     "level": "2"
+                },
+                {
+                    "name": "Rust",
+                    "level": "3"
                 }
             ]
         },
@@ -63,20 +71,16 @@
             "name": "Framework/API",
             "skill": [
                 {
-                    "name": "Spring MVC",
-                    "level": "7"
+                    "name": "Spring MVC/Spring Boot",
+                    "level": "8"
                 },
                 {
-                    "name": "Spring Boot",
+                    "name": "VueJs/NuxtJs",
                     "level": "7"
-                },
-                {
-                    "name": "VueJS",
-                    "level": "5"
                 },
                 {
                     "name": "JQuery",
-                    "level": "7"
+                    "level": "8"
                 }
             ]
         },
