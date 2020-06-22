@@ -374,4 +374,8 @@ h3 {
 	background: url("~resource/icon/social/tistory.png") center no-repeat;;
 	background-size: 100%;
 }
+.social.blog {
+	background: url("~resource/icon/social/blog.png") center no-repeat;;
+	background-size: 100%;
+}
 </style>
