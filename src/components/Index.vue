@@ -8,8 +8,9 @@
 			</div>
 		</div>
 		<div id="side" class="side-bar">
+			<p class="rela-block caps side-header">Information</p>
 			<div class="resume-photo">
-				<img :src="resumePhoto"/>
+				<!-- <img :src="resumePhoto"/> -->
 			</div>
 			<div>
 				<div class="info">
@@ -75,7 +76,7 @@
 </template>
  
 <script>
-import resumePhoto from "resource/img/resume-photo.jpg";
+// import resumePhoto from "resource/img/resume-photo.jpg";
 import settingData from "resource/data.json";
 import * as section from "src/components/section";
 
@@ -84,7 +85,7 @@ export default {
 	data() {
 		return {
 			data: settingData,
-			resumePhoto: resumePhoto
+			// resumePhoto: resumePhoto
 		};
 	},
 	computed: {
