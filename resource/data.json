@@ -46,20 +46,16 @@
                     "level": "7"
                 },
                 {
-                    "name": "Python",
-                    "level": "5"
-                },
-                {
-                    "name": "Pawn",
-                    "level": "9"
-                },
-                {
                     "name": "ES6",
                     "level": "8"
                 },
                 {
                     "name": "Typescript",
                     "level": "8"
+                },
+                {
+                    "name": "Pawn",
+                    "level": "9"
                 }
             ]
         },
@@ -136,8 +132,8 @@
         {
             "companyName": "플레이오토",
             "startDate": "2019-11-19",
-            "endDate": "",
-            "inProgress": true,
+            "endDate": "2020-07-15",
+            "inProgress": false,
             "skills": [
                 "ES6", "Typescript", "AngularJs", "Redis", "Github", "MySQL", "ActionHero",
                 "Postman", "Notion", "AWS EC2"
