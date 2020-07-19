@@ -99,7 +99,7 @@ export default {
       
 			let age = now.getFullYear() - birthDay.getFullYear()
 			birthDay.setFullYear(now.getFullYear());
-			return gender + ', ' + birthDayYear + '년, ' + (age+1) + '(만 ' + ((now < birthDay) == true ? --age : age) + '세)'
+			return gender + ', ' + birthDayYear + '년, ' + (age+1) + '세 (만 ' + ((now < birthDay) == true ? --age : age) + '세)'
 		}
 	},
 	components: {
