@@ -10,7 +10,7 @@
 				</p>
 				<ul>
 					<li class="none-list-style">
-						<p class="small-margin font-weight-bolder">맡은업무</p>
+						<p class="small-margin font-weight-bolder">주요 성과</p>
 						<ul>
 							<li v-for="content of item.content">
 								<p class="small-margin">{{ content }}</p>
